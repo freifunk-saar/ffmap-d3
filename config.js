@@ -4,10 +4,10 @@ define("config", function () {
 
   var ffmapConfig = {
     // link to your main community site:
-    url:       "/",
+    url:       "saar.freifunk.net",
 
     // visible link in the navigation:
-    sitename:  "gothamcity.freifunk.net",
+    sitename:  "saar.freifunk.net",
 
     // initial gravity, friction, of the graph at pageload:
     gravity:   0.05,
