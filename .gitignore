@@ -1,5 +1,4 @@
 nodes/*.png
-nodes.json
 lib/vendor/*
 node_modules/
 bower_components/
