@@ -33,6 +33,14 @@
   padding: 0.25em 0.5em;
 }
 
+.list tr:nth-child(2n){
+  background: #DDDDDD;
+}
+
+.list tr:hover {
+  background: yellow;
+}
+
 .list tbody tr td:nth-child(2) {
   background: lightpink;
 }
