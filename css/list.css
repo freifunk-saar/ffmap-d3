@@ -5,7 +5,8 @@
 
 .list thead th {
   background-color: #F3F781;
-  padding-right: 0px;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
   cursor:pointer;
 }
 
