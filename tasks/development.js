@@ -11,8 +11,8 @@ module.exports = function (grunt) {
 			src: ["dev_test/config.js"],
 			dest: "build/js/config.js"
 		}
-	},  
-    connect: {
+	},
+	connect: {
       server: {
         options: {
           base: "build/", //TODO: once grunt-contrib-connect 0.9 is released, set index file
