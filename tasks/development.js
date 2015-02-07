@@ -2,16 +2,6 @@
 
 module.exports = function (grunt) {
   grunt.config.merge({
-	copy: {
-		"dev_nodes": {
-			src: ["dev_test/nodes.json"],
-			dest: "build/nodes.json"
-		},
-		"dev_config": {
-			src: ["dev_test/config.js"],
-			dest: "build/js/config.js"
-		}
-	},
 	connect: {
       server: {
         options: {
