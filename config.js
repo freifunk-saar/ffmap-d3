@@ -18,7 +18,7 @@ define("config", function () {
     strength:  1.0,
 
     // path to the nodes.json
-    nodesJSON: "https://saar.freifunk.net/static/map/nodes.json"
+    nodesJSON: "https://saar.freifunk.net/map/nodes.json"
   }
 
   return ffmapConfig
