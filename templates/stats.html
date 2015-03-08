@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Freifunk #cityname# - Statistiken</title>
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/list.css" />
+
+    <style type="text/css">
+      #map {
+        width: 100%;
+        box-sizing:border-box;
+      }
+      .olPopup p { margin:0px; }
+      .nodePopup { font-size: 0.8em; }
+      .nodePopup .label { font-weight: bold; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="#url#" id="sitelink">#sitename#</a></h1>
+      <ul>
+        <li><a href="graph.html">Graph</a></li>
+        <li><a href="geomap.html">Karte</a></li>
+        <li><a href="list.html">Liste</a></li>
+		<li><a href="stats.html">Statistiken</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <h1>Knoten und Client Anzahl</h1>
+	  
+	  <h2>Wochenüberblick</h2>
+      <img src="nodes/globalGraph.png" alt="Knoten und Client Anzahl - Wochenüberblick Grafik" />
+	  <h2>Monatsübersicht</h2>
+      <img src="nodes/globalGraphMonth.png" alt="Knoten und Client Anzahl - Monatsübersicht Grafik" />
+	  <h2>Jahresübersicht</h2>
+      <img src="nodes/globalGraphYear.png" alt="Knoten und Client Anzahl - Jahresübersicht Grafik" />
+    </div>
+  </body>
+</html>
