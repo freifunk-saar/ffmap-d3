@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/list.css" />
+	<script data-main="js/traffic" type="text/javascript" src="js/lib/require.js"></script>
 
     <style type="text/css">
       #map {
@@ -31,14 +32,19 @@
       </ul>
     </header>
     <div class="container">
-      <h1>Knoten und Client Anzahl</h1>
+		<h1>Traffic auf den Gateway Servern</h1>
 	  
-	  <h2>Wochenüberblick</h2>
-      <img src="nodes/globalGraph.png" alt="Knoten und Client Anzahl - Wochenüberblick Grafik" />
-	  <h2>Monatsübersicht</h2>
-      <img src="nodes/globalGraphMonth.png" alt="Knoten und Client Anzahl - Monatsübersicht Grafik" />
-	  <h2>Jahresübersicht</h2>
-      <img src="nodes/globalGraphYear.png" alt="Knoten und Client Anzahl - Jahresübersicht Grafik" />
+		<h2>Montagsübersicht in GiB</h2>
+		<canvas id="allGatewaysMonth" width="800" height="400"></canvas>
+	  	
+		<h1>Knoten und Client Anzahl</h1>
+
+		<h2>Wochenüberblick</h2>
+		<img src="nodes/globalGraph.png" alt="Knoten und Client Anzahl - Wochenüberblick Grafik" />
+		<h2>Monatsübersicht</h2>
+		<img src="nodes/globalGraphMonth.png" alt="Knoten und Client Anzahl - Monatsübersicht Grafik" />
+		<h2>Jahresübersicht</h2>
+		<img src="nodes/globalGraphYear.png" alt="Knoten und Client Anzahl - Jahresübersicht Grafik" />
     </div>
   </body>
 </html>
