@@ -46,7 +46,9 @@ module.exports = function(grunt) {
           "bower_components/d3/d3.js",
           "bower_components/leaflet/dist/leaflet-src.js",
           "bower_components/jquery/dist/jquery.js",
-          "bower_components/jquery.tablesorter/js/jquery.tablesorter.js"
+          "bower_components/jquery.tablesorter/js/jquery.tablesorter.js",
+		  "bower_components/es6-promise/promise.js",
+          "bower_components/Chart.js/Chart.js"
         ],
         expand: true,
         flatten: true,
