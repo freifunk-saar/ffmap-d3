@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/list.css" />
 	<script data-main="js/traffic" type="text/javascript" src="js/lib/require.js"></script>
-	<script data-main="js/nodeOnlineCount" type="text/javascript" src="js/lib/require.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <style type="text/css">
@@ -33,7 +32,41 @@
 		<li><a href="stats.html">Statistiken</a></li>
       </ul>
     </header>
-    <div class="container">	
+    <div class="container">
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Knoten online</h4>
+					</div>
+					<div class="panel-body">
+						<span id="nodecount">Number</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Verbundene Endgeräte</h4>
+					</div>
+					<div class="panel-body">
+						<span id="clientcount">Number</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Gateways online</h4>
+					</div>
+					<div class="panel-body">
+						<span id="gatewayscount">Number</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 		<div class="row">
 			<h1>Server Traffic</h1>
 		</div>
