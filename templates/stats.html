@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/list.css" />
 	<script data-main="js/traffic" type="text/javascript" src="js/lib/require.js"></script>
-
+	<script data-main="js/nodeOnlineCount" type="text/javascript" src="js/lib/require.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <style type="text/css">
       #map {
         width: 100%;
@@ -31,23 +33,64 @@
 		<li><a href="stats.html">Statistiken</a></li>
       </ul>
     </header>
-    <div class="container">
-		<h1>Traffic auf den Gateway Servern</h1>
-	  
-		<h2>Monate in GiB</h2>
-		<canvas id="allGatewaysMonth" width="800" height="400"></canvas>
+    <div class="container">	
+		<div class="row">
+			<h1>Server Traffic</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Monate in GiB</h4>
+					</div>
+					<div class="panel-body">
+						<canvas id="allGatewaysMonth"></canvas>
+					</div>
+				</div>				
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Tage in GiB</h4>
+					</div>
+					<div class="panel-body">
+						<canvas id="allGatewaysDay"></canvas>
+					</div>
+				</div>	
+			</div>
+	  	</div>
 		
-		<h2>Tage in GiB</h2>
-		<canvas id="allGatewaysDay" width="800" height="400"></canvas>
-	  	
-		<h1>Knoten und Client Anzahl</h1>
-
-		<h2>Wochenüberblick</h2>
-		<img src="nodes/globalGraph.png" alt="Knoten und Client Anzahl - Wochenüberblick Grafik" />
-		<h2>Monatsübersicht</h2>
-		<img src="nodes/globalGraphMonth.png" alt="Knoten und Client Anzahl - Monatsübersicht Grafik" />
-		<h2>Jahresübersicht</h2>
-		<img src="nodes/globalGraphYear.png" alt="Knoten und Client Anzahl - Jahresübersicht Grafik" />
+		<div class="row">
+			<h1>Knoten und Client Anzahl</h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Wochenüberblick</h2>
+			</div>
+			<div class="col-md-6">
+				<h2>Monatsübersicht</h2>
+			</div>
+		</div>
+		<div class="row">
+			<a href="nodes/globalGraph.png">
+				<img class="col-md-6" src="nodes/globalGraph.png" alt="Knoten und Client Anzahl - Wochenüberblick Grafik" />
+			</a>
+			<a href="nodes/globalGraphMonth.png">
+				<img class="col-md-6" src="nodes/globalGraphMonth.png" alt="Knoten und Client Anzahl - Monatsübersicht Grafik" />
+			</a>
+			
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Jahresübersicht</h2>
+			</div>
+		</div>
+		<div class="row">
+			<a href="nodes/globalGraphYear.png">
+				<img class="col-md-12" src="nodes/globalGraphYear.png" alt="Knoten und Client Anzahl - Jahresübersicht Grafik" />
+			</a>
+		</div>
     </div>
   </body>
 </html>

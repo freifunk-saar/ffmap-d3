@@ -27,11 +27,16 @@ module.exports = function(grunt) {
         expand: true,
         dest: "build/"
       },
+      "bootstrap": {
+        src: ["bower_components/bootstrap/dist/css/bootstrap.css"],
+        expand: false,
+        dest: "build/css/bootstrap.css"
+      },
       "leaflet-css": {
         src: ["leaflet.css"],
         expand: true,
         cwd: "bower_components/leaflet/dist",
-        dest: "build/css"
+        dest: "build/css/"
       }
     },
     uglify: {
@@ -47,7 +52,7 @@ module.exports = function(grunt) {
           "bower_components/leaflet/dist/leaflet-src.js",
           "bower_components/jquery/dist/jquery.js",
           "bower_components/jquery.tablesorter/js/jquery.tablesorter.js",
-		  "bower_components/es6-promise/promise.js",
+          "bower_components/es6-promise/promise.js",
           "bower_components/Chart.js/Chart.js"
         ],
         expand: true,
